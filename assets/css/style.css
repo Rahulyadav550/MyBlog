@@ -1,0 +1,148 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* top head sexction Start */
+.top-head{
+  background-color: #008000;
+  padding: 5px 125px;
+  color: #fff;
+  /* width: 100%;
+  height: 25px; */
+  display: flex;
+  justify-content: space-between;
+}
+/* .top-head .left{
+  float: left;
+}
+.top-head .right{
+  float: right;
+} */
+.top-head p{
+  display: inline;
+}
+.top-head a{
+  color: #72e672;
+}
+/* top head secction  End*/
+
+/* header section start */
+header{
+  width: 100%;
+  height: 90px;
+  line-height: 90px;
+  background-color: #0fac0f;
+  padding: 0px 125px
+}
+header h1, header h4{
+  color: #fff;
+  display: inline;
+}
+/* header section end */
+
+/* nav section satrt */
+nav{
+  width: 100%;
+  background-color: #169616;
+  padding: 5px 125px;
+}
+nav ul li{
+  list-style: none;
+  display: inline-block;
+  margin-left: 20px;
+}
+nav ul li a{
+  color: #000;
+  font-weight: 600;
+  text-decoration: none;
+}
+/* nav section end */
+
+/* main section start */
+.main{
+  width: 100%;
+  padding: 0px 125px;
+  display: flex;
+  justify-content: space-between;
+}
+.main article{
+  padding: 20px 20px 20px 0px;
+}
+.main article a{
+  color: #169116;
+  text-decoration: none;
+}
+.main article p{
+  text-align: justify;
+  margin: 5px 0px;
+}
+aside{
+  height: 50%;
+  background-color: silver;
+  padding: 15px 150px 50px 15px;
+}
+aside ul li{
+  list-style: none;
+  padding-left: 20px;
+}
+/* main section end*/
+
+/* footer section start */
+footer{
+  width: 100%;
+  height: 100px;
+  color: #fff;
+  padding: 10px 125px;
+  background: #024a02;
+  
+}
+footer .first{
+  margin-right: 100px;
+  float: left;
+}
+footer .second{
+  float: left;
+}
+footer .third{
+  float: right;
+}
+/* footer section end */
+
+/* Media queries start */
+@media screen and (Max-width:991px) {
+  .top-head, footer{
+    height: auto;
+    padding: 10px;
+  }
+  .top-head p a{
+    display: block;
+  }
+  header, nav{
+    text-align: center;
+    padding: 0px 10px;
+  }
+  .main{
+    padding: 0px 0px 0px  10px;
+  }
+}
+@media screen and (max-witdh:767) {
+  .main main, aside{
+    float: none;
+    width:  100%;
+    padding: 0px;
+  }
+  .first, .second, .third{
+    float: none;
+    width: 100%;
+  }
+}
+@media screen and (max-width:575px) {
+  header{
+    line-height: normal;
+  }
+  header h1, header h3{
+    display: block;
+  }
+}
+/* Media queries end */
